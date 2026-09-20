@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 168a5e83a2972f145ab04bbef86b8b82
+guid: 95e428fa17dbc47469fea4b08cda32e7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8967347417493193283
-    second: 03.2-Doomlin_0
+      213: -4614041049672707824
+    second: 04.1-Factory worker_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,7 +100,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 03.2-Doomlin_0
+      name: 04.1-Factory worker_0
       rect:
         serializedVersion: 2
         x: 0
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 342c23517fa627c70800000000000000
-      internalID: 8967347417493193283
+      spriteID: 011103f8c12a7ffb0800000000000000
+      internalID: -4614041049672707824
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      03.2-Doomlin_0: 8967347417493193283
+      04.1-Factory worker_0: -4614041049672707824
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
