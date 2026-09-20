@@ -9,10 +9,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3408388379666158193}
-  - component: {fileID: 1362950303326579978}
-  - component: {fileID: 2556270839627132236}
-  - component: {fileID: 3630804967279885402}
   - component: {fileID: -4654927277323922276}
+  - component: {fileID: 1362950303326579978}
+  - component: {fileID: 3630804967279885402}
+  - component: {fileID: 5338270535849825030}
   m_Layer: 0
   m_Name: 10-Preast
   m_TagString: Untagged
@@ -35,6 +35,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-4654927277323922276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1916657852697470230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9719ee3e6d0db2a46a1ef04c999bac51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GuyMerge
+  fruitLevel: 10
+  nextFruitPrefab: {fileID: 7383257823836121959, guid: ad814cee381eb2948bd2391df623b49f, type: 3}
 --- !u!212 &1362950303326579978
 SpriteRenderer:
   serializedVersion: 2
@@ -85,17 +99,44 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 3989757236599244721, guid: f2e4ac02d2a2c0e4ca2324df1635cbe0, type: 3}
-  m_Color: {r: 0.54509807, g: 0.5274512, b: 0.76862746, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 2.56, y: 2.56}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!58 &2556270839627132236
-CircleCollider2D:
+--- !u!50 &3630804967279885402
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1916657852697470230}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!60 &5338270535849825030
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -129,45 +170,38 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 0.5
---- !u!50 &3630804967279885402
-Rigidbody2D:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1916657852697470230}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
---- !u!114 &-4654927277323922276
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1916657852697470230}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9719ee3e6d0db2a46a1ef04c999bac51, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GuyMerge
-  fruitLevel: 10
-  nextFruitPrefab: {fileID: 7383257823836121959, guid: ad814cee381eb2948bd2391df623b49f, type: 3}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.56, y: 2.56}
+    newSize: {x: 2.56, y: 2.56}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.74, y: -0.42}
+      - {x: 0.71, y: -0.29999998}
+      - {x: 0.62, y: -0.16}
+      - {x: 0.5, y: -0.04}
+      - {x: 0.35, y: 0.08}
+      - {x: 0.37, y: 0.24}
+      - {x: 0.34, y: 0.65999997}
+      - {x: 0.29999998, y: 0.87}
+      - {x: 0.08, y: 1.15}
+      - {x: 0.02, y: 1.15}
+      - {x: -0.22, y: 0.97999996}
+      - {x: -0.32999998, y: 0.84}
+      - {x: -0.42, y: 0.65999997}
+      - {x: -0.42999998, y: 0.26}
+      - {x: -0.42999998, y: 0.049999997}
+      - {x: -0.59, y: -0.04}
+      - {x: -0.76, y: -0.22}
+      - {x: -0.87, y: -0.48999998}
+      - {x: -0.9, y: -0.65999997}
+      - {x: -0.9, y: -1.28}
+      - {x: 0.81, y: -1.28}
+      - {x: 0.81, y: -0.76}
+      - {x: 0.77, y: -0.48}
+  m_UseDelaunayMesh: 1
